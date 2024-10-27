@@ -13,8 +13,7 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Glam & Grains: Nutrition and Fashion Blog Website Which You Can Trustf</title>
-    <link rel="icon" href="images/G&G.ico" type="image/x-icon">
-
+    <link rel="shortcut icon" href="images/G&G.ico">
 </head>
 
 <body>
@@ -30,6 +29,7 @@
                         <p class="tag-4">Connect <i class="fa-solid fa-chevron-down"></i></p>
                     </nav>
                 </div>
+
             </div>
         </section>
 
@@ -476,18 +476,23 @@
                 </div>
 
                 <div class="video-container">
-    <div id="jwplayer"></div>
-    <div class="view">
-        <div class="row">
-            <div class="column">
-                <p>WATCH VIDEO</p>
-                <p>How to Start Your Day with a Morning Yoga Routine</p>
-                <p>Wake up your body and mind with this gentle yoga flow that will boost circulation, stretch and lengthen the spine, and energize you for the day ahead.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
+                    <div id="jwplayer"></div>
+                    <div class="view">
+                        <div class="row">
+                            <button class="play-button" aria-label="Play Video">
+                                <i class="bi bi-play-circle-fill"></i>
+                            </button>
+                            <div class="column">
+                                <p class="watch-label">WATCH VIDEO</p>
+                                <p class="video-title">How to Start Your Day with a Morning Yoga Routine</p>
+                                <p class="video-description">
+                                    Wake up your body and mind with this gentle yoga flow that will boost circulation, stretch and lengthen the spine, and energize you for the day ahead.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 <script>
 jwplayer("jwplayer").setup({
     file: "https://cdn.jwplayer.com/manifests/Vip0nh0Q.m3u8",
@@ -506,7 +511,7 @@ jwplayer("jwplayer").setup({
     ],
     width: "100%",
     height: "100%",
-    autostart: true
+    autostart: false
 });</script>
             </div>
         </section>
