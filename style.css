@@ -820,57 +820,59 @@ body {
                 display: flex;
                 justify-content: center;
                 cursor: pointer;
-
-                & video {
+            
+                video {
                     width: 100%;
                     height: 100%;
-                    background: url(https://assets-jpcust.jwpsrv.com/thumbnails/vuq69toh-1280.jpg);
-                    background-position: center;
-                    background-size: cover;
+                    background: url(https://assets-jpcust.jwpsrv.com/thumbnails/vuq69toh-1280.jpg) center center / cover no-repeat;
                 }
-
-                & .view {
+            
+                .view {
                     height: 150px;
                     width: 96%;
                     position: absolute;
                     bottom: 25px;
                     z-index: 10;
-
-                    & .row {
+            
+                    .row {
                         height: auto;
-                        align-items: end;
-
-                        & i {
+                        align-items: flex-end;
+                        display: flex;
+            
+                        i {
                             font-size: 95px;
                             color: white;
                             height: 94px;
-                            border-radius: 100px;
-                            padding: 0px;
+                            border-radius: 100%;
+                            padding: 0;
                             display: grid;
                             place-items: center;
                         }
-
-                        & .column {
+            
+                        .column {
                             width: 89%;
-                            align-items: start;
-
-                            & p {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+            
+                            p {
                                 color: white;
+                                margin: 0;
                             }
-
-                            & p:first-child {
+            
+                            p:first-child {
                                 font-size: 18px;
                                 font-family: sans-serif;
                                 font-weight: lighter;
                             }
-
-                            & p:nth-child(2) {
+            
+                            p:nth-child(2) {
                                 font-size: 35px;
                                 font-family: sans-serif;
                                 font-weight: bolder;
                             }
-
-                            & p:last-child {
+            
+                            p:last-child {
                                 font-size: 18px;
                                 font-family: sans-serif;
                                 font-weight: normal;
@@ -879,13 +881,12 @@ body {
                         }
                     }
                 }
+            
+                &:hover .bi-play-circle-fill {
+                    background-color: #02838d;
+                }
             }
-
-            & .video-container:hover .bi-play-circle-fill {
-                background-color:#02838d;
-            }
-        }
-    }
+            
 
     & .more-top-videos {
         width: 100%;
